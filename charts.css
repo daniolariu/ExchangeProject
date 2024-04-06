@@ -15,6 +15,32 @@ a{
     line-height: 2.4;
     margin-left: 10px;
 }
+.pricebox
+{
+    border: 2px solid black;
+    padding: 20px;
+    padding-left: 19px;
+    background-color: white;
+    margin-top: 100px;
+    width: 115px;
+    justify-content: center;
+    margin-left: 500px;
+}
+.assetlogo
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.assetprice
+{
+    margin-top: 10px;
+    margin-left: 8px;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-left: px;
+}
 .nav_bar{
     background-color: transparent;
     width: 2000px;
@@ -44,4 +70,8 @@ body
     margin: 0;
     padding: 0;
     background-image: url('assets/background.jpg');
+}
+main {
+    display: inline-block;
+    gap: px;
 }
