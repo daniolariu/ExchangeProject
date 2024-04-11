@@ -15,6 +15,39 @@ a{
     line-height: 2.4;
     margin-left: 10px;
 }
+.pricebox
+{
+    border: 2px solid black;
+    padding: 20px;
+    padding-left: 10px;
+    background-color: white;
+    margin-top: 100px;
+    width: 115px;
+    height: 170px;
+    justify-content: center;
+    margin-left: 500px;
+}
+.assetlogo
+{
+    margin-top: 4px;
+    margin-left: 10px;
+    padding-left: 11px;
+    display: flex;
+    justify-content: center;
+}
+#btclogo
+{
+    margin-left: 0px;
+}
+.assetprice
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-left: px;
+}
 .nav_bar{
     background-color: transparent;
     width: 2000px;
@@ -24,7 +57,8 @@ a{
     color: black;
 }
 .navbar-logo{
-    margin-left: 60px;display: flex;
+    margin-left: 60px;
+    display: flex;
     justify-content: space-around;
 }
 .navbar-nav{
@@ -44,4 +78,8 @@ body
     margin: 0;
     padding: 0;
     background-image: url('assets/background.jpg');
+}
+.container {
+    margin-top: -10px;
+    display: inline-block;
 }

@@ -45,3 +45,35 @@ body
     padding: 0;
     background-image: url('assets/background.jpg');
 }
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 45px;
+    font-weight: 700;
+}
+p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.carousel
+{
+    max-width: 1000px;
+    max-height: 500px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
+}
+.carousel img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
