@@ -35,7 +35,7 @@ a{
     font-weight: 700;
 }
 .nav_bar a:hover {
-    color: #7700ff;
+    color: blue;
     transition: color 0.3s ease-in-out;
     text-decoration: underline;
 }
@@ -43,7 +43,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background-image: url('assets/background.jpg');
+    background-image: url('../assets/background2.jpg');
 }
 h1{
     color: white;
@@ -57,7 +57,7 @@ p{
     color: white;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 25px;
     font-weight: 500;
 }
@@ -69,11 +69,27 @@ p{
     display: flex;
     justify-content: center;
     margin-left: 500px;
+    margin-bottom: 500px;
 }
 .carousel img {
     transition: transform 0.3s ease-in-out;
 }
-
 .carousel img:hover {
     transform: scale(1.1);
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.card-text{
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+}
+.card-title
+{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
 }

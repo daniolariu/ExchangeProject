@@ -35,7 +35,7 @@ a{
     font-weight: 700;
 }
 .nav_bar a:hover {
-    color: #7700ff;
+    color: blue;
     transition: color 0.3s ease-in-out;
     text-decoration: underline;
 }
@@ -43,5 +43,5 @@ body
 {
     margin: 0;
     padding: 0;
-    background-image: url('assets/background.jpg');
+    background-image: url('../assets/background2.jpg');
 }
