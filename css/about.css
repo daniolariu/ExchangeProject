@@ -39,6 +39,14 @@ a{
     transition: color 0.3s ease-in-out;
     text-decoration: underline;
 }
+#usericon{
+    margin-right: 20px;
+}
+#dropdownMenuButton{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 150px;
+}
 body
 {
     margin: 0;

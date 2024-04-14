@@ -17,6 +17,7 @@ a{
 }
 .nav_bar{
     background-color: transparent;
+    justify-content: space-around;
     width: 2000px;
     height: 80px;
     display: flex;
@@ -29,6 +30,7 @@ a{
 }
 .navbar-nav{
     display: flex;
+    justify-content: space-around;
     gap: 30px;
     margin-left: 30px;
     font-size: 22px;
@@ -38,6 +40,14 @@ a{
     color: blue;
     transition: color 0.3s ease-in-out;
     text-decoration: underline;
+}
+#usericon{
+    margin-right: 20px;
+}
+#dropdownMenuButton{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 150px;
 }
 body
 {

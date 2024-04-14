@@ -30,8 +30,51 @@
                     </li>
                 </ul>
             </div>
+            <img src="assets/user.png" id = "usericon" alt="usericon">
+            <div class="dropdown"></div>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                @Username
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Option 1</a>
+                <a class="dropdown-item" href="#">Option 2</a>
+                <a class="dropdown-item" href="#">Option 3</a>
+            </div>
+        </div>
         </nav>
     </header>
-    <h1>Exchange</h1>
+    <main>
+        <h1>Exchange</h1>
+        <form>
+            <div class="form-group">
+                <label for="coin" class="text">Select Coin:</label>
+                <select class="form-control" id="coin1">
+                    <option value="bitcoin">Bitcoin <p id="quantBtc">$60,000</p></option>
+                    <option value="ethereum">Ethereum <p id="quantEth">$3,200</Ethereump></option>
+                    <option value="solana">Solana <p id="quantSol">$140</p></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount" class="text">Enter Amount:</label>
+                <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+            </div>
+            <p>Swap to:</p>
+            <form>
+                <div class="form-group">
+                    <label for="coin2" class="text">Select Coin:</label>
+                    <select class="form-control" id="coin2">
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option>
+                        <option value="solana">Solana</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount2" class="text">Amount you will get:</label>
+                    <input type="number" class="form-control" id="amount2" placeholder="Amount you will get">
+                </div>
+                <button type="submit" class="btn btn-primary">Exchange</button>
+        </form>
+    </main>
+    <script src="js/exchange.js"></script>
 </body>
 </html>

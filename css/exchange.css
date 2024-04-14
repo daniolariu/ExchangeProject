@@ -17,6 +17,7 @@ a{
 }
 .nav_bar{
     background-color: transparent;
+    justify-content: space-around;
     width: 2000px;
     height: 80px;
     display: flex;
@@ -29,6 +30,7 @@ a{
 }
 .navbar-nav{
     display: flex;
+    justify-content: space-around;
     gap: 30px;
     margin-left: 30px;
     font-size: 22px;
@@ -39,10 +41,44 @@ a{
     transition: color 0.3s ease-in-out;
     text-decoration: underline;
 }
+#usericon{
+    margin-right: 20px;
+}
+#dropdownMenuButton{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 150px;
+}
 body
 {
     margin: 0;
     padding: 0;
     background-image: url('../assets/background2.jpg');
     background-size: cover;
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.text{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    font-size: 25px;
+}
+form{
+    display: inline-flexbox;
+    justify-content: center;
+    margin-top: 20px;
+    width: 400px;
+    max-width: 400px;
+    margin-left: 760px;
 }
