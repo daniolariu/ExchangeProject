@@ -44,10 +44,14 @@ a{
 #usericon{
     margin-right: 20px;
 }
-#dropdownMenuButton{
-    display: flex;
-    justify-content: space-around;
-    margin-right: 150px;
+.dd-menu
+{
+    margin-right: 70px;
+}
+.dd-item
+{
+    font-size: 20px;
+    width: 50px;
 }
 body
 {
@@ -86,6 +90,16 @@ p{
 }
 .carousel img:hover {
     transform: scale(1.1);
+}
+.c-ul
+{
+    list-style-type: none;
+}
+.c-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .row{
     display: flex;
