@@ -32,11 +32,11 @@ fetch(url)
 //         console.log('No coin selected');
 //       }
 // });
-document.getElementById('btcprice').innerHTML += btcPrice;
-document.getElementById('ethprice').innerHTML += ethPrice;
-document.getElementById('solprice').innerHTML += solPrice;
+document.getElementById('btcprice').innerHTML += quantBtc;
+document.getElementById('ethprice').innerHTML += quantEth;
+document.getElementById('solprice').innerHTML += quantSol;
 
-document.getElementById('btcprice2').innerHTML += btcPrice;
-document.getElementById('ethprice2').innerHTML += ethPrice;
-document.getElementById('solprice2').innerHTML += solPrice;
+document.getElementById('btcprice2').innerHTML += quantBtc;
+document.getElementById('ethprice2').innerHTML += quantEth;
+document.getElementById('solprice2').innerHTML += quantSol;
 

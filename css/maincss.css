@@ -53,8 +53,8 @@ p{
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    margin-left: 500px;
-    margin-bottom: 500px;
+    margin-left: 300px;
+    margin-bottom: 100px;
 }
 .carousel img {
     transition: transform 0.3s ease-in-out;
@@ -87,4 +87,12 @@ p{
     color: black;
     font-size: 20px;
     font-weight: 700;
+}
+video{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 300px;
+    margin-bottom: 50px;
 }

@@ -35,3 +35,11 @@ body
     background-image: url('../assets/background2.jpg');
     max-width: screen.width;
 }
+video {
+    width: 800px;
+    height: 700px;
+    position: relative;
+    z-index: -1;
+    margin-top: 100px;
+    margin-left: 400px;
+}
