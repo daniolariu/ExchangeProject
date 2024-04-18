@@ -6,27 +6,13 @@ a{
     line-height: 2.3;
     margin-left: 30px;
 }
-.name{
+.exc-name{
     color: black;
     text-decoration: none;
     margin-top: 16px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 2.4;
-    margin-left: 10px;
-}
-.nav_bar{
-    background-color: transparent;
-    justify-content: space-around;
-    width: 2000px;
-    height: 80px;
-    display: flex;
-    margin-left: 3px;
-    color: black;
-}
-.navbar-logo{
-    margin-left: 60px;display: flex;
-    justify-content: space-around;
 }
 .navbar-nav{
     display: flex;
@@ -35,29 +21,14 @@ a{
     margin-left: 30px;
     font-size: 22px;
     font-weight: 700;
-}
-.nav_bar a:hover {
-    color: blue;
-    transition: color 0.3s ease-in-out;
-    text-decoration: underline;
-}
-#usericon{
-    margin-right: 20px;
-}
-.dd-menu
-{
-    margin-right: 70px;
-}
-.dd-item
-{
-    font-size: 20px;
-    width: 50px;
+    margin-top: 10px;
 }
 body
 {
     margin: 0;
     padding: 0;
     background-image: url('../assets/background2.jpg');
+    max-width: screen.width;
 }
 h1{
     color: white;

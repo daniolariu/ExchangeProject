@@ -6,41 +6,22 @@ a{
     line-height: 2.3;
     margin-left: 30px;
 }
-.name{
+.exc-name{
     color: black;
     text-decoration: none;
     margin-top: 16px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 2.4;
-    margin-left: 10px;
-}
-.nav_bar{
-    background-color: transparent;
-    width: 2000px;
-    height: 80px;
-    display: flex;
-    margin-left: 3px;
-    color: black;
-}
-.navbar-logo{
-    margin-left: 60px;display: flex;
-    justify-content: space-around;
 }
 .navbar-nav{
     display: flex;
+    justify-content: space-around;
     gap: 30px;
     margin-left: 30px;
     font-size: 22px;
     font-weight: 700;
-}
-.nav_bar a:hover {
-    color: blue;
-    transition: color 0.3s ease-in-out;
-    text-decoration: underline;
-}
-#usericon{
-    margin-right: 20px;
+    margin-top: 10px;
 }
 #dropdownMenuButton{
     display: flex;
@@ -52,4 +33,5 @@ body
     margin: 0;
     padding: 0;
     background-image: url('../assets/background2.jpg');
+    max-width: screen.width;
 }

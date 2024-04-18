@@ -4,54 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/exchange.css">
 </head>
 <body>
     <header>
-        <nav class="nav_bar navbar navbar-expand-lg navbar-light bg-light">
-            <img class="navbar-logo" src="assets/logo2.jpg"><p class="name">CSWAP</p>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand exc-name" href="index.html"><img src="assets/logo2.jpg" alt="" class="logo">CSWAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="exchange.html">Exchange</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="charts.html">Charts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="exchange.html">Exchange</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="charts.html">Charts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nft.html">NFT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
                 </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <img src="assets/user.png" id = "usericon" alt="usericon">
-            <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                @Username
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Option 1</a>
-                <a class="dropdown-item" href="#">Option 2</a>
-                <a class="dropdown-item" href="#">Option 3</a>
-            </div>
-        </div>
-        </nav>
+          </nav>
     </header>
     <main>
         <h1>Exchange</h1>
         <form>
-            <div class="form-group">
+             <div class="form-group">
                 <label for="coin" class="text">Select Coin:</label>
                 <select class="form-control" id="coin1">
-                    <option value="bitcoin">Bitcoin <p id="quantBtc">$60,000</p></option>
-                    <option value="ethereum">Ethereum <p id="quantEth">$3,200</Ethereump></option>
-                    <option value="solana">Solana <p id="quantSol">$140</p></option>
+                    <option value="bitcoin" id="btcprice">Bitcoin (BTC) </option>
+                    <option value="ethereum" id="ethprice">Ethereum (ETH) </option>
+                    <option value="solana" id="solprice">Solana (SOL) </option>
                 </select>
             </div>
             <div class="form-group">
@@ -63,9 +70,9 @@
                 <div class="form-group">
                     <label for="coin2" class="text">Select Coin:</label>
                     <select class="form-control" id="coin2">
-                        <option value="bitcoin">Bitcoin</option>
-                        <option value="ethereum">Ethereum</option>
-                        <option value="solana">Solana</option>
+                        <option value="bitcoin" id="btcprice2">Bitcoin (BTC) </option>
+                        <option value="ethereum" id="ethprice2">Ethereum (ETH) </option>
+                        <option value="solana" id="solprice2">Solana (SOL) </option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -73,6 +80,30 @@
                     <input type="number" class="form-control" id="amount2" placeholder="Amount you will get">
                 </div>
                 <button type="submit" class="btn btn-primary">Exchange</button>
+
+                 <!-- <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                  </div> -->
         </form>
     </main>
     <script src="js/exchange.js"></script>

@@ -18,17 +18,25 @@ fetch(url)
     solPrice = data.solana.usd;
     autoRefresh();
   });
-document.addEventListener('click', function(event) {
-    if(coin1.value == 'bitcoin'){
-       document.getElementById('quantBtc').innerHTML = quantBtc;
-      }
-      else if(coin1.value == 'ethereum'){
-        document.getElementById('quantEth').innerHTML = quantEth;
-      }
-      else if(coin1.value == 'solana'){
-        document.getElementById('quantSol').innerHTML = quantSol;
-      }
-      else{
-        console.log('No coin selected');
-      }
-});
+// document.addEventListener('click', function(event) {
+//     if(coin1.value == 'bitcoin'){
+//        document.getElementById('quantBtc').innerHTML += quantBtc;
+//       }
+//       else if(coin1.value == 'ethereum'){
+//         document.getElementById('quantEth').innerHTML += quantEth;
+//       }
+//       else if(coin1.value == 'solana'){
+//         document.getElementById('quantSol').innerHTML += quantSol;
+//       }
+//       else{
+//         console.log('No coin selected');
+//       }
+// });
+document.getElementById('btcprice').innerHTML += btcPrice;
+document.getElementById('ethprice').innerHTML += ethPrice;
+document.getElementById('solprice').innerHTML += solPrice;
+
+document.getElementById('btcprice2').innerHTML += btcPrice;
+document.getElementById('ethprice2').innerHTML += ethPrice;
+document.getElementById('solprice2').innerHTML += solPrice;
+
