@@ -52,7 +52,6 @@
     </header>
     <main>
         <h1>Exchange</h1>
-        <form>
              <!-- <div class="form-group">
                 <label for="coin" class="text">Select Coin:</label>
                 <select class="form-control" id="coin1">
@@ -80,34 +79,34 @@
                     <input type="number" class="form-control" id="amount2" placeholder="Amount you will get">
                 </div>
                 <button type="submit" class="btn btn-primary">Exchange</button> -->
-                <form>
+                <form class="exc-form">
                   <p style="color: white;">Choose a coin:</p>
                   <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose a crypto: </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      <li><a class="dropdown-item dd-item" href="#" id="btcprice">Bitcoin (BTC) </a></li>
+                      <li><a class="dropdown-item dd-item" href="#" id="ethprice">Ethereum (ETH) </a></li>
+                      <li><a class="dropdown-item dd-item" href="#" id="solprice">Solana (SOL) </a></li>
+                      <!-- <li><hr class="dropdown-divider dd-item"></li> -->
+                      <li><a class="dropdown-item dd-item" href="#">Separated link</a></li>
                     </ul>
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Enter amount: ">
                   </div>
+
                   <p style="color: white;">Swap to:</p>
                   <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose a crypto: </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                      <li><a class="dropdown-item dd-item" href="#" id="btcprice2">Bitcoin (BTC) </a></li>
+                      <li><a class="dropdown-item dd-item" href="#" id="ethprice2">Ethereum (ETH) </a></li>
+                      <li><a class="dropdown-item dd-item" href="#" id="solprice2">Solana (SOL) </a></li>
+                      <!-- <li><hr class="dropdown-divider dd-item"></li> -->
+                      <li><a class="dropdown-item dd-item" href="#">Separated link</a></li>
                     </ul>
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Enter amount: ">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Swap</button>
                 </form>
-        </form>
     </main>
     <script src="js/exchange.js"></script>
 </body>

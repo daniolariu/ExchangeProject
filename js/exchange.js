@@ -8,16 +8,28 @@ var btcPrice;
 var ethPrice;
 var solPrice;
 var quantBtc = 1.53, quantEth = 5.3, quantSol = 124;
-url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana&vs_currencies=usd";
-fetch(url)
-  .then(res => res.json())
-  .then(data =>  {
-    console.log(data);
-    btcPrice = data.bitcoin.usd;
-    ethPrice = data.ethereum.usd;
-    solPrice = data.solana.usd;
-    autoRefresh();
-  });
+  const options = {
+    method: 'GET',
+    headers: {accept: 'application/json', 'x-cg-demo-api-key': 'CG-NVZBz4YMYjsqhdwNpLzMbqja'}
+  };
+  
+  fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana&vs_currencies=usd', options)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        btcPrice = data.bitcoin.usd;
+        ethPrice = data.ethereum.usd;
+        solPrice = data.solana.usd;
+        document.getElementById('btcprice').innerHTML += "$"+btcPrice;
+        document.getElementById('ethprice').innerHTML += "$"+ethPrice;
+        document.getElementById('solprice').innerHTML += "$"+solPrice;
+
+        document.getElementById('btcprice2').innerHTML += "$"+btcPrice;
+        document.getElementById('ethprice2').innerHTML += "$"+ethPrice;
+        document.getElementById('solprice2').innerHTML += "$"+solPrice;
+      }
+    )
+    .catch(err => console.error(err));
 // document.addEventListener('click', function(event) {
 //     if(coin1.value == 'bitcoin'){
 //        document.getElementById('quantBtc').innerHTML += quantBtc;
@@ -32,11 +44,6 @@ fetch(url)
 //         console.log('No coin selected');
 //       }
 // });
-document.getElementById('btcprice').innerHTML += quantBtc;
-document.getElementById('ethprice').innerHTML += quantEth;
-document.getElementById('solprice').innerHTML += quantSol;
-
-document.getElementById('btcprice2').innerHTML += quantBtc;
-document.getElementById('ethprice2').innerHTML += quantEth;
-document.getElementById('solprice2').innerHTML += quantSol;
-
+.addEventListener('click', function(event) {
+    console.log('clicked');
+});
