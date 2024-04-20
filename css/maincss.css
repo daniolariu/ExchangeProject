@@ -96,3 +96,11 @@ video{
     margin-left: 300px;
     margin-bottom: 50px;
 }
+.crd{
+    background-image: url('../assets/card-wallpaper.png');
+}
+.crd:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+}

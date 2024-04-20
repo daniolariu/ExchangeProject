@@ -30,20 +30,3 @@ var quantBtc = 1.53, quantEth = 5.3, quantSol = 124;
       }
     )
     .catch(err => console.error(err));
-// document.addEventListener('click', function(event) {
-//     if(coin1.value == 'bitcoin'){
-//        document.getElementById('quantBtc').innerHTML += quantBtc;
-//       }
-//       else if(coin1.value == 'ethereum'){
-//         document.getElementById('quantEth').innerHTML += quantEth;
-//       }
-//       else if(coin1.value == 'solana'){
-//         document.getElementById('quantSol').innerHTML += quantSol;
-//       }
-//       else{
-//         console.log('No coin selected');
-//       }
-// });
-.addEventListener('click', function(event) {
-    console.log('clicked');
-});

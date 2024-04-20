@@ -19,6 +19,26 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd', options)
   .then(response => response.json())
   .then(data => {
     console.log(data);
+    let details = document.createElement('tr');
+    let logo = document.createElement('th');
+    let name = document.createElement('th');
+    let price = document.createElement('th');
+    let marketCap = document.createElement('th');
+    let volume = document.createElement('th');
+    let change = document.createElement('th');
+    logo.innerHTML = "Logo";
+    name.innerHTML = "Name";
+    price.innerHTML = "Price";
+    marketCap.innerHTML = "Market Cap";
+    volume.innerHTML = "Volume";
+    change.innerHTML = "Change";
+    details.appendChild(logo);
+    details.appendChild(name);
+    details.appendChild(price);
+    details.appendChild(marketCap);
+    details.appendChild(volume);
+    details.appendChild(change);
+    document.getElementById('coinTable').appendChild(details);
     data.forEach(coin => {
       let coinRow = document.createElement('tr');
       let coinName = document.createElement('td');

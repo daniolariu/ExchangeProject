@@ -48,20 +48,14 @@ h1{
     font-weight: 700;
     font-size: 25px;
 }
-.exc-form{
-    display: inline;
-    justify-content: center;
-    width: 400px;
-    margin-left: 460px;
-}
 .dd-item
 {
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
     margin-top: 20px;
     margin-left: 40px;
-    width: 70px;
+    width: 60px;
     display: flex;
     justify-content: center;
 
